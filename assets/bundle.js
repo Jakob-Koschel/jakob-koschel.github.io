@@ -36880,7 +36880,7 @@
 	                            var renderImage = _react2.default.createElement(
 	                                'figure',
 	                                { key: "content" + j, id: id },
-	                                _react2.default.createElement('img', { 'class': 'js-image', 'data-pos': '0.25', id: id, src: '/' + image['url'] }),
+	                                _react2.default.createElement('img', { 'class': 'js-image', 'data-pos': '0.25', id: id, src: image['url'] }),
 	                                image['caption']
 	                            );
 	                            renderSectionContent.push(renderImage);
@@ -36960,7 +36960,7 @@
 
 
 	// module
-	exports.push([module.id, "*.\n*:after,\n*:before {\n\t-webkit-box-sizing: border-box;\n\tbox-sizing: border-box;\n}\n\n.clearfix:before,\n.clearfix:after {\n\tcontent: '';\n\tdisplay: table;\n}\n\n.clearfix:after {\n\tclear: both;\n}\n\nbody {\n\tfont-family: 'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;\n\tcolor: #5d5c56;\n\tbackground: #fff;\n\t-webkit-font-smoothing: antialiased;\n\t-moz-osx-font-smoothing: grayscale;\n}\n\na {\n\ttext-decoration: none;\n\tcolor: #47dbb4;\n\toutline: none;\n}\n\na:hover,\na:focus {\n\tcolor: #33b996;\n}\n\n.hidden {\n\tposition: absolute;\n\toverflow: hidden;\n\twidth: 0;\n\theight: 0;\n\tpointer-events: none;\n}\n\n\n/* Canvas container */\n\n.container {\n\tposition: fixed;\n\tz-index: -1;\n\ttop: 0;\n\tleft: 0;\n}\n\n\n/* Header */\n\n.codrops-header {\n\tposition: relative;\n\tz-index: 1000;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-flex-direction: column;\n\tflex-direction: column;\n\t-webkit-justify-content: center;\n\tjustify-content: center;\n\t-webkit-align-items: center;\n\talign-items: center;\n\theight: 100vh;\n\tmin-height: 600px;\n\tpadding: 2em 1em 4em;\n\ttext-align: center;\n\tcolor: #fff;\n\tbackground: #181922 no-repeat center center;\n\tbackground-size: cover;\n}\n\n.codrops-header::before {\n\tcontent: '';\n\tposition: absolute;\n\ttop: 0;\n\tleft: 0;\n\twidth: 100%;\n\theight: 100%;\n\tbackground: rgba(24, 25, 34, 0.5);\n}\n\n.header-title {\n\tposition: relative;\n}\n\n.header-title__main {\n\tfont-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;\n\tfont-size: 3em;\n\tfont-weight: 400;\n\tline-height: 1;\n\tmargin: 0em 0 0.15em 0;\n}\n\n.header-title__part {\n\tfont-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;\n\tfont-size: 0.85em;\n\tfont-weight: 400;\n\tdisplay: block;\n\tpadding: 0.5em 0 2em;\n\ttext-indent: 4px;\n\tletter-spacing: 4px;\n\ttext-transform: uppercase;\n}\n\n.header-title__part::before,\n.header-title__part::after {\n\tcontent: '\\2014';\n\tpadding: 0 0.5em;\n}\n\n.header-title__sub {\n\tfont-size: 0.55em;\n\tfont-weight: normal;\n\tdisplay: block;\n\tmax-width: 700px;\n\tmargin: 0 auto;\n\tpadding: 0.5em 0 1em;\n\tcolor: #d1d2d2;\n}\n\n.intro {\n\tfont-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;\n\tfont-size: 2em;\n\tposition: relative;\n\tz-index: 1000;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-flex-direction: column;\n\tflex-direction: column;\n\t-webkit-justify-content: center;\n\tjustify-content: center;\n\t-webkit-align-items: center;\n\talign-items: center;\n\theight: 150vh;\n\tmargin: 0 0 3em;\n\tpadding: 3em;\n\ttext-align: center;\n\tcolor: #fff;\n\tbackground: #181922;\n}\n\n.intro blockquote {\n\tmax-width: 800px;\n\tmargin: 0 auto;\n}\n\n.intro em {\n\tfont-size: 1.5em;\n}\n\n.intro span {\n\tdisplay: block;\n\tpadding: 1em 0;\n\tcolor: #464b4b;\n}\n\n\n/* Top Navigation Style */\n\n.codrops-links {\n\tposition: relative;\n\tdisplay: inline-block;\n\ttext-align: center;\n\twhite-space: nowrap;\n}\n\n.codrops-links::after {\n\tcontent: '';\n\tposition: absolute;\n\ttop: 0;\n\tleft: 50%;\n\twidth: 1px;\n\theight: 100%;\n\tbackground: rgba(255, 255, 255, 0.5);\n\t-webkit-transform: rotate3d(0, 0, 1, 22.5deg);\n\ttransform: rotate3d(0, 0, 1, 22.5deg);\n}\n\n.codrops-icon {\n\tdisplay: inline-block;\n\twidth: 1.5em;\n\tmargin: 0.5em;\n\tpadding: 0em 0;\n\ttext-decoration: none;\n}\n\n.codrops-icon span {\n\tdisplay: none;\n}\n\n.codrops-icon:before {\n\tfont-family: 'codropsicons';\n\tfont-weight: normal;\n\tfont-style: normal;\n\tfont-variant: normal;\n\tline-height: 1;\n\tmargin: 0 5px;\n\ttext-transform: none;\n\t-webkit-font-smoothing: antialiased;\n\tspeak: none;\n}\n\n.codrops-icon--drop:before {\n\tcontent: '\\E001';\n\tcolor: #09c;\n}\n\n.codrops-icon--prev:before {\n\tcontent: '\\E004';\n}\n\n\n/* Demo links */\n\n.codrops-demos {\n\tmargin: 2em 0 0;\n}\n\n.codrops-demos a {\n\tdisplay: inline-block;\n\tmargin: 0 0.5em;\n}\n\n.codrops-demos a.current-demo {\n\tcolor: #333;\n}\n\n\n/* Content */\n\n.content {\n\tpadding: 3em 0;\n}\n\n\n/* Related demos */\n\n.content--related {\n\tposition: relative;\n\tz-index: 1000;\n\tpadding: 10em 2em;\n\ttext-align: center;\n\tcolor: #fff;\n\tbackground: #181922;\n}\n\n.info {\n\tfont-size: 1.65em;\n\tpadding: 0 0 4em;\n}\n\n.media-item {\n\tdisplay: inline-block;\n\tpadding: 1em;\n\tvertical-align: top;\n\t-webkit-transition: color 0.3s;\n\ttransition: color 0.3s;\n}\n\n.media-item__img {\n\tmax-width: 100%;\n\topacity: 0.6;\n\t-webkit-transition: opacity 0.3s;\n\ttransition: opacity 0.3s;\n}\n\n.media-item:hover .media-item__img,\n.media-item:focus .media-item__img {\n\topacity: 1;\n}\n\n.media-item__title {\n\tfont-size: 1em;\n\tmargin: 0;\n\tpadding: 0.5em;\n}\n\n\n/* Story */\n\n.text {\n\tposition: relative;\n\tz-index: 1000;\n\tpadding: 5em 3em;\n}\n\n.text section {\n\tfont-size: 1.25em;\n\tline-height: 1.7;\n}\n\n.text section h2 {\n\tfont-size: 2.7em;\n\tfont-weight: 400;\n\tmargin: 0;\n\ttext-align: left;\n}\n\n.text section:not(:first-child) h2 {\n\tpadding: 2em 0 0 0;\n}\n\n.title-up {\n\tfont-size: 0.365em;\n\tfont-weight: bold;\n\tdisplay: block;\n\tletter-spacing: 7px;\n\ttext-transform: uppercase;\n\tcolor: #cecec5;\n}\n\n.title-down {\n\tfont-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;\n\tfont-size: 1.35em;\n\tfont-weight: 400;\n\tline-height: 0.9;\n\tdisplay: block;\n\tpadding: 0.15em 0 0.35em;\n\tcolor: #5f646c;\n}\n\n.text figure {\n\tmargin: 1em 0 2em;\n}\n\n.text figure img {\n\tmax-width: 100%;\n}\n\n.text figcaption {\n\tfont-size: 0.85em;\n\tfont-style: italic;\n\tpadding: 1em 1.5em 0;\n\ttext-align: center;\n\tcolor: #5f646c;\n}\n\n.text section p {\n\tfont-size: 0.95em;\n\tmargin: 0.5em 0 1.5em;\n}\n\n.text section p.text-intro {\n\tfont-size: 1.3em;\n\tfont-style: italic;\n\tline-height: 1.5;\n\tmargin: 0.5em 0 1.25em;\n\ttext-align: left;\n\tcolor: #9d9c95;\n}\n\n.text blockquote {\n\tfont-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;\n\tfont-size: 2em;\n\tline-height: 1.5;\n\tposition: relative;\n\ttext-align: left;\n\tcolor: #939997;\n}\n\n.text blockquote::before {\n\tcontent: '\\201C';\n\tfont-size: 2.5em;\n\tfont-style: italic;\n\tline-height: 1;\n\tposition: absolute;\n\ttop: -0.15em;\n\tright: 100%;\n\tmargin: 0 0.075em 0 0;\n\tcolor: #f0f3f3;\n}\n\n.text blockquote span {\n\tfont-family: 'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;\n\tfont-size: 0.5em;\n\twhite-space: nowrap;\n\tcolor: #cbcece;\n}\n\n.js-section {\n\twidth: 50%;\n\tmax-width: 700px;\n}\n\n.js-gallery {\n\tpadding-top: 50px;\n\tpadding-bottom: 50px;\n}\n\n.js-gallery-content {\n\tfont-size: 0;\n\ttext-align: center;\n}\n\n.js-gallery-content img {\n\tmax-width: 100%;\n\tmargin: 10px 0;\n}\n\n@media(max-width: 720px) {\n\t.header-title {\n\t\tfont-size: 1.5em;\n\t}\n\t.intro {\n\t\tfont-size: 1.25em;\n\t\theight: auto;\n\t\tpadding: 1em;\n\t}\n\t.text {\n\t\tfont-size: 0.85em;\n\t\tpadding: 2em;\n\t\ttext-align: justify;\n\t}\n\t.text section h2 {\n\t\tfont-size: 1.85em;\n\t}\n\t.text blockquote {\n\t\tfont-size: 1.45em;\n\t}\n\t.js-section {\n\t\twidth: 100%;\n\t\tmax-width: none;\n\t}\n}\n", ""]);
+	exports.push([module.id, "*.\n*:after,\n*:before {\n\t-webkit-box-sizing: border-box;\n\tbox-sizing: border-box;\n}\n\n.clearfix:before,\n.clearfix:after {\n\tcontent: '';\n\tdisplay: table;\n}\n\n.clearfix:after {\n\tclear: both;\n}\n\nbody {\n\tfont-family: 'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;\n\tcolor: #000000;\n\tbackground: #fff;\n\t-webkit-font-smoothing: antialiased;\n\t-moz-osx-font-smoothing: grayscale;\n}\n\na {\n\ttext-decoration: none;\n\tcolor: #47dbb4;\n\toutline: none;\n}\n\na:hover,\na:focus {\n\tcolor: #33b996;\n}\n\n.hidden {\n\tposition: absolute;\n\toverflow: hidden;\n\twidth: 0;\n\theight: 0;\n\tpointer-events: none;\n}\n\n\n/* Canvas container */\n\n.container {\n\tposition: fixed;\n\tz-index: -1;\n\ttop: 0;\n\tleft: 0;\n}\n\n\n/* Header */\n\n.codrops-header {\n\tposition: relative;\n\tz-index: 1000;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-flex-direction: column;\n\tflex-direction: column;\n\t-webkit-justify-content: center;\n\tjustify-content: center;\n\t-webkit-align-items: center;\n\talign-items: center;\n\theight: 100vh;\n\tmin-height: 600px;\n\tpadding: 2em 1em 4em;\n\ttext-align: center;\n\tcolor: #fff;\n\tbackground: #181922 no-repeat center center;\n\tbackground-size: cover;\n}\n\n.codrops-header::before {\n\tcontent: '';\n\tposition: absolute;\n\ttop: 0;\n\tleft: 0;\n\twidth: 100%;\n\theight: 100%;\n\tbackground: rgba(24, 25, 34, 0.5);\n}\n\n.header-title {\n\tposition: relative;\n}\n\n.header-title__main {\n\tfont-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;\n\tfont-size: 3em;\n\tfont-weight: 400;\n\tline-height: 1;\n\tmargin: 0em 0 0.15em 0;\n}\n\n.header-title__part {\n\tfont-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;\n\tfont-size: 0.85em;\n\tfont-weight: 400;\n\tdisplay: block;\n\tpadding: 0.5em 0 2em;\n\ttext-indent: 4px;\n\tletter-spacing: 4px;\n\ttext-transform: uppercase;\n}\n\n.header-title__part::before,\n.header-title__part::after {\n\tcontent: '\\2014';\n\tpadding: 0 0.5em;\n}\n\n.header-title__sub {\n\tfont-size: 0.55em;\n\tfont-weight: normal;\n\tdisplay: block;\n\tmax-width: 700px;\n\tmargin: 0 auto;\n\tpadding: 0.5em 0 1em;\n\tcolor: #d1d2d2;\n}\n\n.intro {\n\tfont-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;\n\tfont-size: 2em;\n\tposition: relative;\n\tz-index: 1000;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\t-webkit-flex-direction: column;\n\tflex-direction: column;\n\t-webkit-justify-content: center;\n\tjustify-content: center;\n\t-webkit-align-items: center;\n\talign-items: center;\n\theight: 150vh;\n\tmargin: 0 0 3em;\n\tpadding: 3em;\n\ttext-align: center;\n\tcolor: #fff;\n\tbackground: #181922;\n}\n\n.intro blockquote {\n\tmax-width: 800px;\n\tmargin: 0 auto;\n}\n\n.intro em {\n\tfont-size: 1.5em;\n}\n\n.intro span {\n\tdisplay: block;\n\tpadding: 1em 0;\n\tcolor: #464b4b;\n}\n\n\n/* Top Navigation Style */\n\n.codrops-links {\n\tposition: relative;\n\tdisplay: inline-block;\n\ttext-align: center;\n\twhite-space: nowrap;\n}\n\n.codrops-links::after {\n\tcontent: '';\n\tposition: absolute;\n\ttop: 0;\n\tleft: 50%;\n\twidth: 1px;\n\theight: 100%;\n\tbackground: rgba(255, 255, 255, 0.5);\n\t-webkit-transform: rotate3d(0, 0, 1, 22.5deg);\n\ttransform: rotate3d(0, 0, 1, 22.5deg);\n}\n\n.codrops-icon {\n\tdisplay: inline-block;\n\twidth: 1.5em;\n\tmargin: 0.5em;\n\tpadding: 0em 0;\n\ttext-decoration: none;\n}\n\n.codrops-icon span {\n\tdisplay: none;\n}\n\n.codrops-icon:before {\n\tfont-family: 'codropsicons';\n\tfont-weight: normal;\n\tfont-style: normal;\n\tfont-variant: normal;\n\tline-height: 1;\n\tmargin: 0 5px;\n\ttext-transform: none;\n\t-webkit-font-smoothing: antialiased;\n\tspeak: none;\n}\n\n.codrops-icon--drop:before {\n\tcontent: '\\E001';\n\tcolor: #09c;\n}\n\n.codrops-icon--prev:before {\n\tcontent: '\\E004';\n}\n\n\n/* Demo links */\n\n.codrops-demos {\n\tmargin: 2em 0 0;\n}\n\n.codrops-demos a {\n\tdisplay: inline-block;\n\tmargin: 0 0.5em;\n}\n\n.codrops-demos a.current-demo {\n\tcolor: #333;\n}\n\n\n/* Content */\n\n.content {\n\tpadding: 3em 0;\n}\n\n\n/* Related demos */\n\n.content--related {\n\tposition: relative;\n\tz-index: 1000;\n\tpadding: 10em 2em;\n\ttext-align: center;\n\tcolor: #fff;\n\tbackground: #181922;\n}\n\n.info {\n\tfont-size: 1.65em;\n\tpadding: 0 0 4em;\n}\n\n.media-item {\n\tdisplay: inline-block;\n\tpadding: 1em;\n\tvertical-align: top;\n\t-webkit-transition: color 0.3s;\n\ttransition: color 0.3s;\n}\n\n.media-item__img {\n\tmax-width: 100%;\n\topacity: 0.6;\n\t-webkit-transition: opacity 0.3s;\n\ttransition: opacity 0.3s;\n}\n\n.media-item:hover .media-item__img,\n.media-item:focus .media-item__img {\n\topacity: 1;\n}\n\n.media-item__title {\n\tfont-size: 1em;\n\tmargin: 0;\n\tpadding: 0.5em;\n}\n\n\n/* Story */\n\n.text {\n\tposition: relative;\n\tz-index: 1000;\n\tpadding: 5em 3em;\n}\n\n.text section {\n\tfont-size: 1.25em;\n\tline-height: 1.7;\n}\n\n.text section h2 {\n\tfont-size: 2.7em;\n\tfont-weight: 400;\n\tmargin: 0;\n\ttext-align: left;\n}\n\n.text section:not(:first-child) h2 {\n\tpadding: 2em 0 0 0;\n}\n\n.title-up {\n\tfont-size: 0.365em;\n\tfont-weight: bold;\n\tdisplay: block;\n\tletter-spacing: 7px;\n\ttext-transform: uppercase;\n\tcolor: #cecec5;\n}\n\n.title-down {\n\tfont-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;\n\tfont-size: 1.35em;\n\tfont-weight: 400;\n\tline-height: 0.9;\n\tdisplay: block;\n\tpadding: 0.15em 0 0.35em;\n\tcolor: #5f646c;\n}\n\n.text figure {\n\tmargin: 1em 0 2em;\n}\n\n.text figure img {\n\tmax-width: 100%;\n}\n\n.text figcaption {\n\tfont-size: 0.85em;\n\tfont-style: italic;\n\tpadding: 1em 1.5em 0;\n\ttext-align: center;\n\tcolor: #5f646c;\n}\n\n.text section p {\n\tfont-size: 0.95em;\n\tmargin: 0.5em 0 1.5em;\n}\n\n.text section p.text-intro {\n\tfont-size: 1.3em;\n\tfont-style: italic;\n\tline-height: 1.5;\n\tmargin: 0.5em 0 1.25em;\n\ttext-align: left;\n\tcolor: #9d9c95;\n}\n\n.text blockquote {\n\tfont-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;\n\tfont-size: 2em;\n\tline-height: 1.5;\n\tposition: relative;\n\ttext-align: left;\n\tcolor: #939997;\n}\n\n.text blockquote::before {\n\tcontent: '\\201C';\n\tfont-size: 2.5em;\n\tfont-style: italic;\n\tline-height: 1;\n\tposition: absolute;\n\ttop: -0.15em;\n\tright: 100%;\n\tmargin: 0 0.075em 0 0;\n\tcolor: #f0f3f3;\n}\n\n.text blockquote span {\n\tfont-family: 'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;\n\tfont-size: 0.5em;\n\twhite-space: nowrap;\n\tcolor: #cbcece;\n}\n\n.js-section {\n\twidth: 50%;\n\tmax-width: 700px;\n}\n\n.js-gallery {\n\tpadding-top: 50px;\n\tpadding-bottom: 50px;\n}\n\n.js-gallery-content {\n\tfont-size: 0;\n\ttext-align: center;\n}\n\n.js-gallery-content img {\n\tmax-width: 100%;\n\tmargin: 10px 0;\n}\n\n@media(max-width: 720px) {\n\t.header-title {\n\t\tfont-size: 1.5em;\n\t}\n\t.intro {\n\t\tfont-size: 1.25em;\n\t\theight: auto;\n\t\tpadding: 1em;\n\t}\n\t.text {\n\t\tfont-size: 0.85em;\n\t\tpadding: 2em;\n\t\ttext-align: justify;\n\t}\n\t.text section h2 {\n\t\tfont-size: 1.85em;\n\t}\n\t.text blockquote {\n\t\tfont-size: 1.45em;\n\t}\n\t.js-section {\n\t\twidth: 100%;\n\t\tmax-width: none;\n\t}\n}\n", ""]);
 
 	// exports
 
@@ -37308,7 +37308,7 @@
 
 
 	// module
-	exports.push([module.id, ".static-image-container {\n\tposition: relative;\n\tz-index: 1000;\n\t/*width: 50%;*/\n}\n\n.hiking-static-image-container {\n\tposition: relative;\n\tz-index: 1000;\n\twidth: 50%;\n}\n", ""]);
+	exports.push([module.id, ".static-image-container {\n\tposition: relative;\n\tz-index: 1000;\n\t/*width: 50%;*/\n}\n\n.hiking-static-image-container {\n\tposition: relative;\n\tz-index: 1000;\n\twidth: 50%;\n}\n\n.button {\n    background-color: #4CAF50; /* Green */\n    border: none;\n    color: white;\n    padding: 16px 32px;\n    text-align: center;\n    text-decoration: none;\n    display: inline-block;\n    font-size: 16px;\n    margin: 1px 3em;\n    -webkit-transition-duration: 0.4s; /* Safari */\n    transition-duration: 0.4s;\n    cursor: pointer;\n}\n\n.button:hover {\n    background-color: #4CAF50; /* Green */\n    color: white;\n}\n\n.centeredDiv {\n\theight: 100px;\n\twidth: 70%;\n\n\tposition: absolute;\n\ttop:0;\n\tbottom: 200px;\n\tleft: 0;\n\tright: 0;\n\n\tmargin: auto;\n}\n", ""]);
 
 	// exports
 
@@ -38094,11 +38094,13 @@
 
 	      var gradient = this.ctx.createLinearGradient(this.sectionsBounds[0].right, 0, this.sectionsBounds[0].right + 200, 0);
 	      if (blendWorks) {
-	        gradient.addColorStop(0, 'rgba(185, 217, 151, 1)');
-	        gradient.addColorStop(1, "rgba(185, 217, 151, 0)");
+	        gradient.addColorStop(0, 'rgba(230, 230, 230, 1)');
+	        gradient.addColorStop(1, "rgba(230, 230, 230, 0.0)");
+	        // gradient.addColorStop(0,'rgba(155, 187, 121, 1)')
+	        // gradient.addColorStop(1,"rgba(155, 187, 121, 0)")
 	      } else {
-	        gradient.addColorStop(0, 'rgba(255, 255, 255, 0.85)');
-	        gradient.addColorStop(1, "rgba(255, 255, 255, 0)");
+	        gradient.addColorStop(0, 'rgba(255, 255, 255, 0.9)');
+	        gradient.addColorStop(1, "rgba(255, 255, 255, 0.85)");
 	      }
 	      this.ctx.fillStyle = gradient;
 
@@ -46568,12 +46570,46 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'div',
-	                null,
-	                'Welcome!',
+	                { className: 'centeredDiv' },
+	                'Willkommen! ',
+	                _react2.default.createElement('br', null),
+	                'Der folgende Nutzertest wurde konzipiert um die unterschiedliche Darstellung von Wanderkarten zu bewerten. ',
+	                _react2.default.createElement('br', null),
+	                _react2.default.createElement(
+	                    'ul',
+	                    null,
+	                    _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        'Dieser Test pr\xFCft nicht Dich sondern die Webseite und dauert nur wenige Minuten.'
+	                    ),
+	                    _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        'Du bekommst drei verschiedene Karten in drei unterschliedlichen Darstellungen gezeigt und nach jeder Darstellung einen Fragebogen zur gezeigten Karte'
+	                    ),
+	                    _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        'Bitte nimm Dir die Zeit die Karten und deren Beschreibung genauer anzuschauen'
+	                    ),
+	                    _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        'Mache Dir bitte keine Notizen'
+	                    ),
+	                    _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        'Beziehe Deine Bewertung bitte nicht auf die Qualit\xE4t der Texte und Bilder'
+	                    )
+	                ),
+	                'Vielen Dank f\xFCr Deine Teilnahme! ',
+	                _react2.default.createElement('br', null),
 	                _react2.default.createElement(
 	                    'button',
-	                    { onClick: this.continuePressed.bind(this) },
-	                    'Starte User Test'
+	                    { className: 'button', style: { "margin": "20px" }, onClick: this.continuePressed.bind(this) },
+	                    'Starte Nutzertest'
 	                )
 	            );
 	        }
@@ -47016,10 +47052,17 @@
 	            }
 	            var currentLevel = parseInt(this.props.params.id);
 	            if (progress['current-level'] > 3) {
-	                _reactRouter.hashHistory.replace('/usertest/thanks');
+	                var userid = _reactCookie2.default.load('userid');
+	                window.location = _config2.default['usertest-urls'][3] + "?userid=" + userid;
 	            } else if (progress['current-level'] > currentLevel) {
 	                var userid = _reactCookie2.default.load('userid');
-	                window.location = _config2.default['usertest-urls'][currentLevel - 1] + "?userid=" + userid + "&level=" + currentLevel;
+	                var currentMapType = progress['used-map-types'][currentLevel - 1];
+	                var currentMapId = progress['used-map-ids'][currentLevel - 1];
+	                if (_config2.default['localhost']) {
+	                    window.location = _config2.default['usertest-urls'][currentMapId - 1] + "?userid=" + userid + "&level=" + currentLevel + "&maptype=" + currentMapType + "&localhost=true";
+	                } else {
+	                    window.location = _config2.default['usertest-urls'][currentMapId - 1] + "?userid=" + userid + "&level=" + currentLevel + "&maptype=" + currentMapType;
+	                }
 	                return;
 	            } else if (progress['current-level'] == currentLevel) {
 	                var currentMapType = progress['used-map-types'][currentLevel - 1];
@@ -47063,10 +47106,16 @@
 	            }
 	            var currentLevel = parseInt(this.props.params.id);
 	            var progress = _reactCookie2.default.load('progress');
+	            var currentMapType = progress['used-map-types'][currentLevel - 1];
+	            var currentMapId = progress['used-map-ids'][currentLevel - 1];
 	            progress['current-level'] = currentLevel + 1;
 	            _reactCookie2.default.save('progress', progress, { path: '/' });
 	            var userid = _reactCookie2.default.load('userid');
-	            window.location = _config2.default['usertest-urls'][currentLevel - 1] + "?userid=" + userid + "&level=" + currentLevel;
+	            if (_config2.default['localhost']) {
+	                window.location = _config2.default['usertest-urls'][currentMapId - 1] + "?userid=" + userid + "&level=" + currentLevel + "&maptype=" + currentMapType + "&localhost=true";
+	            } else {
+	                window.location = _config2.default['usertest-urls'][currentMapId - 1] + "?userid=" + userid + "&level=" + currentLevel + "&maptype=" + currentMapType;
+	            }
 	        }
 	    }, {
 	        key: 'render',
@@ -47089,7 +47138,7 @@
 	                map,
 	                _react2.default.createElement(
 	                    'button',
-	                    { onClick: this.continuePressed.bind(this) },
+	                    { className: 'button', onClick: this.continuePressed.bind(this) },
 	                    'Fortfahren'
 	                )
 	            );
@@ -47113,9 +47162,10 @@
 	//  weak
 
 	var config = {
-	    'usertest-urls': ['https://form.jotformeu.com/70594191158360', 'https://form.jotformeu.com/70594191158360', 'https://form.jotformeu.com/70594191158360'],
+	    'usertest-urls': ['https://form.jotformeu.com/70652644825359', 'https://form.jotformeu.com/70661539356361', 'https://form.jotformeu.com/70661629302352', 'https://form.jotformeu.com/70652994355365'],
 	    'maps-count': 3,
-	    'map-types': ['hiking', 'osm', 'storytelling']
+	    'map-types': ['hiking', 'osm', 'storytelling'],
+	    'localhost': false
 	};
 
 	exports.default = config;
@@ -64254,8 +64304,8 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'div',
-	                null,
-	                'Good bye!'
+	                { className: 'centeredDiv' },
+	                'Vielen Dank f\xFCr Deine Teilnahme an dem Nutzertest!'
 	            );
 	        }
 	    }]);
@@ -64289,6 +64339,10 @@
 
 	var _reactCookie2 = _interopRequireDefault(_reactCookie);
 
+	var _config = __webpack_require__(588);
+
+	var _config2 = _interopRequireDefault(_config);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -64313,7 +64367,12 @@
 	            var currentLevel = progress['current-level'];
 	            console.log("ContinuePage loaded with level: ", currentLevel);
 	            if (currentLevel > 3) {
-	                _reactRouter.hashHistory.replace('/usertest/thanks');
+	                var userid = _reactCookie2.default.load('userid');
+	                if (_config2.default['localhost']) {
+	                    window.location = _config2.default['usertest-urls'][3] + "?userid=" + userid + "&localhost=true";
+	                } else {
+	                    window.location = _config2.default['usertest-urls'][3] + "?userid=" + userid;
+	                }
 	            } else if (currentLevel > 0) {
 	                _reactRouter.hashHistory.replace('/usertest/' + currentLevel);
 	            }
