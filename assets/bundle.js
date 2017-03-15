@@ -38223,17 +38223,22 @@
 	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
-	  value: true
+	    value: true
 	});
 	exports.loadImage = loadImage;
 	function loadImage(src) {
-	  return new Promise(function (resolve, reject) {
-	    var img = new Image();
-	    img.addEventListener("load", function (event) {
-	      resolve(img);
+	    return new Promise(function (resolve, reject) {
+	        var img = new Image();
+	        img.addEventListener("load", function (event) {
+	            console.log("onload success: ", event);
+	            resolve(img);
+	        });
+	        img.addEventListener("error", function (event) {
+	            console.log("onload error: ", event);
+	            reject(event);
+	        });
+	        img.src = src;
 	    });
-	    img.src = src;
-	  });
 	}
 
 /***/ },
@@ -38265,7 +38270,7 @@
 /* 575 */
 /***/ function(module, exports) {
 
-	'use strict';
+	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -38274,11 +38279,13 @@
 	function get(url) {
 	  return new Promise(function (resolve, reject) {
 	    var ajax = new XMLHttpRequest();
-	    ajax.open('GET', url);
+	    ajax.open('GET', url, true);
 	    ajax.onload = function (event) {
 	      if (ajax.status == 200) {
+	        console.log("onload success: ", event);
 	        resolve(ajax.response);
 	      } else {
+	        console.log("onload failure: ", event);
 	        reject(ajax);
 	      }
 	    };
@@ -46581,27 +46588,63 @@
 	                    _react2.default.createElement(
 	                        'li',
 	                        null,
-	                        'Dieser Test pr\xFCft nicht Dich sondern die Webseite und dauert nur wenige Minuten.'
+	                        'Dieser Test pr\xFCft nicht Dich sondern die Webseite und ',
+	                        _react2.default.createElement(
+	                            'b',
+	                            null,
+	                            'dauert ca. 20 Minuten'
+	                        ),
+	                        '.'
 	                    ),
 	                    _react2.default.createElement(
 	                        'li',
 	                        null,
-	                        'Du bekommst drei verschiedene Karten in drei unterschliedlichen Darstellungen gezeigt und nach jeder Darstellung einen Fragebogen zur gezeigten Karte'
+	                        'F\xFChre den Test bitte ',
+	                        _react2.default.createElement(
+	                            'b',
+	                            null,
+	                            'nicht'
+	                        ),
+	                        ' auf einem Smartphone durch, da die Bildschirmgr\xF6\xDFe nicht ausreichend gro\xDF ist.'
 	                    ),
 	                    _react2.default.createElement(
 	                        'li',
 	                        null,
-	                        'Bitte nimm Dir die Zeit die Karten und deren Beschreibung genauer anzuschauen'
+	                        'Aufgrund der Verwendung sehr gro\xDFer Karten wird ',
+	                        _react2.default.createElement(
+	                            'b',
+	                            null,
+	                            'Firefox nicht unterst\xFCtzt'
+	                        ),
+	                        '. ',
+	                        _react2.default.createElement('br', null),
+	                        ' (sollte eine der drei Karten nicht dargestellt werden, kannst Du mir das gerne per Mail mitteilen: jakob.koschel@student.uni-tuebingen.de)'
 	                    ),
 	                    _react2.default.createElement(
 	                        'li',
 	                        null,
-	                        'Mache Dir bitte keine Notizen'
+	                        'Du bekommst drei verschiedene Karten in drei unterschliedlichen Darstellungen gezeigt und nach jeder Darstellung einen Fragebogen zur gezeigten Karte.'
 	                    ),
 	                    _react2.default.createElement(
 	                        'li',
 	                        null,
-	                        'Beziehe Deine Bewertung bitte nicht auf die Qualit\xE4t der Texte und Bilder'
+	                        'Bitte nimm Dir die Zeit die Karten und deren Beschreibung genauer anzuschauen ',
+	                        _react2.default.createElement(
+	                            'b',
+	                            null,
+	                            '(ca 5 Minuten pro Karte)'
+	                        ),
+	                        '.'
+	                    ),
+	                    _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        'Mache Dir bitte keine Notizen.'
+	                    ),
+	                    _react2.default.createElement(
+	                        'li',
+	                        null,
+	                        'Beziehe Deine Bewertung bitte nicht auf die Qualit\xE4t der Texte und Bilder.'
 	                    )
 	                ),
 	                'Vielen Dank f\xFCr Deine Teilnahme! ',
@@ -47162,7 +47205,7 @@
 	//  weak
 
 	var config = {
-	    'usertest-urls': ['https://form.jotformeu.com/70652644825359', 'https://form.jotformeu.com/70661539356361', 'https://form.jotformeu.com/70661629302352', 'https://form.jotformeu.com/70652994355365'],
+	    'usertest-urls': ['https://form.jotformeu.com/70733450441348', 'https://form.jotformeu.com/70733436985365', 'https://form.jotformeu.com/70732700733349', 'https://form.jotformeu.com/70732717254355'],
 	    'maps-count': 3,
 	    'map-types': ['hiking', 'osm', 'storytelling'],
 	    'localhost': false
@@ -64304,7 +64347,7 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'div',
-	                { className: 'centeredDiv' },
+	                { className: 'centeredDiv', style: { "textAlign": "center" } },
 	                'Vielen Dank f\xFCr Deine Teilnahme an dem Nutzertest!'
 	            );
 	        }
