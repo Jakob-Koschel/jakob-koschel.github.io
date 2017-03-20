@@ -47178,6 +47178,13 @@
 	            return _react2.default.createElement(
 	                'div',
 	                null,
+	                _react2.default.createElement('br', null),
+	                _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'Bitte schau Dir die Karte, Texte und Bilder genau an. Wenn Du fertig bist klicke "Fortfahren" am Ende der Seite.'
+	                ),
+	                _react2.default.createElement('br', null),
 	                map,
 	                _react2.default.createElement(
 	                    'button',
