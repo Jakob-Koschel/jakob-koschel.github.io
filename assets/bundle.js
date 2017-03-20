@@ -47184,6 +47184,11 @@
 	                    null,
 	                    'Bitte schau Dir die Karte, Texte und Bilder genau an. Wenn Du fertig bist klicke "Fortfahren" am Ende der Seite.'
 	                ),
+	                _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'Aufgrund der Bildgr\xF6\xDFe kann es zu etwas l\xE4ngeren Ladezeiten beim Laden der Karte kommen. Bitte warte bis die Karte sichtbar ist.'
+	                ),
 	                _react2.default.createElement('br', null),
 	                map,
 	                _react2.default.createElement(
