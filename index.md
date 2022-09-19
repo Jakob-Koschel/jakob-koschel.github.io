@@ -6,12 +6,11 @@ layout: default
 
 <img class="profile-picture" src="profile.jpg">
 
-I have joined the Systems and Network Security Group in February 2020 as a PhD student. My research focuses on system security, operating systems, side-channels and microarchitectural attacks.
-I obtained my Master’s degree also at the Vrije Universiteit Amsterdam in Computer Science (Computer Systems & Security) in 2019.
+I am a 3rd year PhD student at the Systems and Network Security Group of the Vrije Universiteit Amsterdam.
 
 ## Research Interest
 
-My research interest focuses on system security. I'm working on microarchitectural side-channels.
+My research interests are system security, operating systems, side-channels, microarchitectural attacks and memory safety.
 
 ## Publications
 
