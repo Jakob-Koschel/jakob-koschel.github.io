@@ -6,7 +6,7 @@ layout: default
 
 <img class="profile-picture" src="profile.jpg">
 
-I am a 3rd year PhD student at the Systems and Network Security Group of the Vrije Universiteit Amsterdam.
+I am a 4rd year PhD student at the Systems and Network Security Group of the Vrije Universiteit Amsterdam.
 
 ## Research Interest
 
@@ -14,8 +14,9 @@ My research interests are system security, operating systems, side-channels, mic
 
 ## Publications
 
-1. [**NDSS '22**] Koschel, J.; Johannesmeyer, B.; Razavi, K.; Bos, H.; and Giuffrida, C.: [Kasper: Scanning for Generalized Transient Execution Gadgets in the Linux Kernel](https://download.vusec.net/papers/kasper_ndss22.pdf)
-2. [**Euro S&P '20**] Koschel, J.; Giuffrida, C.; Bos, H.; and Razavi, K.: [TagBleed: Breaking KASLR on the Isolated Kernel Address Space Using Tagged TLBs](https://download.vusec.net/papers/tagbleed_eurosp20.pdf)
+1. [**USENIX '23**] Koschel, J.; Borrello, P.; D’Elia, DC.; Bos, H.; and Giuffrida, C.: [Uncontained: Uncovering Container Confusion in the Linux Kernel](https://download.vusec.net/papers/uncontained_sec23.pdf)
+2. [**NDSS '22**] Koschel, J.; Johannesmeyer, B.; Razavi, K.; Bos, H.; and Giuffrida, C.: [Kasper: Scanning for Generalized Transient Execution Gadgets in the Linux Kernel](https://download.vusec.net/papers/kasper_ndss22.pdf)
+3. [**Euro S&P '20**] Koschel, J.; Giuffrida, C.; Bos, H.; and Razavi, K.: [TagBleed: Breaking KASLR on the Isolated Kernel Address Space Using Tagged TLBs](https://download.vusec.net/papers/tagbleed_eurosp20.pdf)
 
 ## Presentations
 
@@ -37,6 +38,7 @@ Some of my work has been covered by the following [LWN.net](https://LWN.net) art
 
 ## Teaching
 
+* Teaching Assistant: Binary and Malware Analysis, 2023
 * Teaching Assistant: Binary and Malware Analysis, 2022
 * Teaching Assistant: Binary and Malware Analysis, 2021
 * Teaching Assistant: Binary and Malware Analysis, 2020
@@ -46,6 +48,4 @@ Some of my work has been covered by the following [LWN.net](https://LWN.net) art
 * Herbert Bos: Professor, Department of Computer Science, Vrije Universiteit Amsterdam
 * Cristiano Giuffrida: Associate Professor, Department of Computer Science, Vrije Universiteit Amsterdam
 * Kaveh Razavi: Assistant Professor, Department of Information Technology and Electrical Engineering, ETH Zürich
-
-
 
