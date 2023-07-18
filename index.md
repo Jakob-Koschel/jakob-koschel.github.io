@@ -25,7 +25,7 @@ My research interests are system security, operating systems, side-channels, mic
 
 ## Open source experience
 
-Submitted patches to various different subsystems of the Linux kernel, responding to feedback and criticism appropriately, resulting in most [patches](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/log/?qt=author&q=jakobkoschel%40gmail.com) (around 80) being accepted by the maintainers of the respective subsystems.
+Submitted patches to various different subsystems of the Linux kernel, responding to feedback and criticism appropriately, resulting in most [patches](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/log/?qt=author&q=%5C%28jakobkoschel%40gmail.com%5C%29%5C%7C%5C%28jkl820.git%40gmail.com%5C%29) (around 90) being accepted by the maintainers of the respective subsystems.
 
 Submitted a [patch](https://reviews.llvm.org/D120490) to llvm-project to enable plugin support for the new pass manager with LTO. Released in LLVM 15 ([commit](https://github.com/llvm/llvm-project/commit/0c86198b279a98c8550fde318b59ed3ca0ca5045)).
 
