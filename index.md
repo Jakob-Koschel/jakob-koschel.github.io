@@ -6,7 +6,7 @@ layout: default
 
 <img class="profile-picture" src="profile.jpg">
 
-I am a 4rd year PhD student at the Systems and Network Security Group of the Vrije Universiteit Amsterdam.
+I am a 4th year PhD student at the Systems and Network Security Group of the Vrije Universiteit Amsterdam.
 
 ## Research Interest
 
